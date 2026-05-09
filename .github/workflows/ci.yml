@@ -26,6 +26,7 @@ jobs:
 
       # Build Spring Boot jar
       - name: Build Application
+        working-directory: ci-cd
         run: mvn clean package -DskipTests
 
       # Login to Docker Hub
