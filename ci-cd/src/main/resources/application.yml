@@ -1,0 +1,28 @@
+
+server:
+  port: 9091
+#  servlet:
+#    context-path: /rtgs-service
+
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://database101.cxmcyg8aothk.ap-south-1.rds.amazonaws.com:1433;database=testing;encrypt=true;trustServerCertificate=true;
+    username: admin
+    password: adminadmin
+
+    sqlScriptEncoding: UTF-8
+    tomcat.connection-properties: useUnicode=yes;characterEncoding=utf-8;
+    hikari:
+      connection-test-query: SELECT 1
+      minimum-idle: 8
+      maximum-pool-size: 24
+      pool-name: sql-pool
+      auto-commit: true
+      max-lifetime: 1800000
+      leak-detection-threshold: 80000
+
+
+
