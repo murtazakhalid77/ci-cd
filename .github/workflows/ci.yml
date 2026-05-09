@@ -24,6 +24,7 @@ jobs:
 
       # IMPORTANT: build jar first
       - name: Build Maven Project
+        working-directory: ci-cd
         run: mvn clean package -DskipTests
 
       # Verify jar exists (debug step)
