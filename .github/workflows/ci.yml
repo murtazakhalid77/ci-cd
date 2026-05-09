@@ -35,7 +35,7 @@ jobs:
 
       # Build Docker image
       - name: Build Docker Image
-        run: docker build -t $IMAGE_NAME:latest .
+        run: docker build -t $IMAGE_NAME:latest ci-cd/ci-cd
 
       # Push Docker image
       - name: Push Docker Image
