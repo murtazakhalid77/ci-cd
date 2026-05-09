@@ -1,13 +1,13 @@
 package com.practice.ci_cd.controller;
 
-import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 
 @RestController
-@RequiredArgsConstructor
+
 @RequestMapping("/api/v1/testing")
 public class TestingController {
 
